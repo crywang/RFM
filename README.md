@@ -3,7 +3,7 @@
 This repository contains the Pytorch implementation of Representative Forgery Mining for Fake Face Detection. If you find our code useful in your research, please cite:
 
 ```
-@inproceedings{wangCVPR21representative,
+@inproceedings{wangCVPR21rfm,
   author    = {Wang, Chengrui and Deng, Weihong},
   title     = {Representative Forgery Mining for Fake Face Detection},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -46,3 +46,6 @@ Average FAM can be generated for representative forgery visualization, run:
 python AvgFAM.py
 ```
 
+### Contact:
+
+If you have any questions about our work, feel free to contact us through email (Chengrui Wang: crwang@bupt.edu.cn).
