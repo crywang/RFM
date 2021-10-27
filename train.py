@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
     MAX_TPR_4 = 0.
 
-    model = eval(modelname)(num_classes=2).cuda()
+    model = eval(modelname)(num_classes=2, pretrained=False).cuda()
 
     if args.distributed:
         model = torch.nn.DataParallel(model)
