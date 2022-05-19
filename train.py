@@ -39,8 +39,6 @@ parser.add_argument('--save_model', default=True, action='store_true')
 parser.add_argument('--save_optim', default=False, action='store_true')
 
 args = parser.parse_args()
-
-modelname = args.modelname
 upper = args.upper
 
 
@@ -86,7 +84,7 @@ if __name__ == "__main__":
 
     MAX_TPR_4 = 0.
 
-    model = eval(modelname)(num_classes=2, pretrained=False).cuda()
+    model = xception(num_classes=2, pretrained=False).cuda()
 
     if args.distributed:
         model = torch.nn.DataParallel(model)
