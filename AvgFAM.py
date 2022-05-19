@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 import cv2
 import utils.datasets_profiles as dp
 
-modelname = "xception"
 resume_model = ""
 
 aug = torchvision.transforms.Compose([
@@ -43,7 +42,7 @@ if __name__ == "__main__":
     cuda_device = "cuda:0"
     torch.cuda.set_device(cuda_device)
 
-    model = eval(modelname)(num_classes=2).cuda()
+    model = xception(num_classes=2, pretrained=False).cuda()
 
     model.load_state_dict(torch.load(resume_model, map_location={'cuda:0': cuda_device, 'cuda:1': cuda_device, 'cuda:2': cuda_device, 'cuda:3': cuda_device}))
 
