@@ -46,6 +46,8 @@ Average FAM can be generated for representative forgery visualization, run:
 python AvgFAM.py
 ```
 
+Models pretrained on [celebdf](https://drive.google.com/file/d/1-QqinypEk0JqFnSTI_qDAfY2kNlegy7W/view?usp=sharing) and [dffd](https://drive.google.com/file/d/1wj87F2XSpZhGlZ_HNDRV4SAO5D6n40BN/view?usp=sharing). 
+
 ### Contact:
 
 If you have any questions about our work, feel free to contact us through email (Chengrui Wang: crwang@bupt.edu.cn).
